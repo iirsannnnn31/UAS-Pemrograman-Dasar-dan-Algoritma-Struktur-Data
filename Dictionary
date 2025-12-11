@@ -1,1 +1,9 @@
+mahasiswa = {
+    "nama": "Budi",
+    "nim": "20240123",
+    "prodi": "Informatika",
+    "semester": 3
+}
+
+print(mahasiswa)
 
