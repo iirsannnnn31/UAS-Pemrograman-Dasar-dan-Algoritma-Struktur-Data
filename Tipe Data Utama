@@ -1,1 +1,14 @@
+#Integer
+umur = 20
+tahun = 2024
+
+
+#Float
+nilai = 85.5
+pi = 3.14
+
+
+#String
+nama = "Andi"
+alamat = "Jakarta"
 
