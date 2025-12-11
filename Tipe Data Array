@@ -1,1 +1,104 @@
+# Membuat array satu dimensi
+buah = ["apel", "jeruk", "mangga", "pisang"]
+
+# Menampilkan isi array
+print("Isi array buah:")
+for item in buah:
+    print(item)
+
+# Mengakses elemen tertentu
+print("\nElemen pertama:", buah[0])
+print("Elemen terakhir:", buah[-1])
+
+# Menambah elemen baru
+buah.append("anggur")
+print("\nSetelah menambah 'anggur':", buah)
+
+# Mengubah elemen array
+buah[1] = "kiwi"
+print("Setelah mengubah elemen index 1:", buah)
+
+# Menghapus elemen
+buah.remove("mangga")
+print("Setelah menghapus 'mangga':", buah)
+
+
+
+
+# Membuat array dua dimensi (matriks)
+matriks = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Menampilkan isi array 2D
+print("Isi matriks:")
+for baris in matriks:
+    print(baris)
+
+# Mengakses elemen tertentu (baris 1, kolom 2)
+print("\nElemen pada baris 1 kolom 2:", matriks[0][1])
+
+# Mengubah elemen
+matriks[1][1] = 55
+print("\nSetelah mengubah elemen di baris 2 kolom 2:")
+for baris in matriks:
+    print(baris)
+
+# Menambah baris baru
+matriks.append([10, 11, 12])
+print("\nSetelah menambah baris baru:")
+for baris in matriks:
+    print(baris)
+
+# Menambah kolom baru pada setiap baris
+for baris in matriks:
+    baris.append(0)
+
+print("\nSetelah menambah kolom baru:")
+for baris in matriks:
+    print(baris)
+
+
+
+
+# Membuat array 3 dimensi
+# Isi berupa 2 blok, tiap blok berisi 2 baris, dan tiap baris berisi 3 kolom
+array3D = [
+    [
+        [1, 2, 3],
+        [4, 5, 6]
+    ],
+    [
+        [7, 8, 9],
+        [10, 11, 12]
+    ]
+]
+
+# Menampilkan seluruh isi array 3D
+print("Isi array 3D:")
+for block in array3D:
+    for row in block:
+        print(row)
+    print("---")  # pemisah blok
+
+# Mengakses elemen tertentu
+print("Elemen array3D[1][0][2]:", array3D[1][0][2])  # = 9
+
+# Mengubah elemen
+array3D[0][1][1] = 55
+print("\nSetelah mengubah elemen array3D[0][1][1] = 55:")
+for block in array3D:
+    for row in block:
+        print(row)
+    print("---")
+
+# Menambah baris baru pada blok pertama
+array3D[0].append([13, 14, 15])
+print("\nSetelah menambah baris baru di blok pertama:")
+for block in array3D:
+    for row in block:
+        print(row)
+    print("---")
 
